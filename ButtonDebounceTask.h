@@ -19,6 +19,7 @@ public:
 	virtual void ButtonReleased() = 0;
 
 	virtual void run(uint32_t now);
+	bool IsPressed();
 
 protected:
 	const int Pin;

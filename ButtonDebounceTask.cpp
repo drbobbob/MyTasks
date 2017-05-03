@@ -63,3 +63,8 @@ void ButtonDebounceTask::run(uint32_t now)
 	PrevState = newState;
 	incRunTime(PollInterval);
 }
+
+bool ButtonDebounceTask::IsPressed()
+{
+	return !digitalRead(Pin);
+}
